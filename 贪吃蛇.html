@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #map {
+        background-color: #ccc;
+        height: 600px;
+        width: 800px;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="game.js"></script>
+    <script>
+    var map = document.getElementById('map');
+    var g1=new Game(map);
+        g1.start();
+    // var f1=new Food();
+    // f1.render(map);
+    // var g1=new Snake();
+    // g1.render(map);
+    
+    </script>
+</body>
+</html>
